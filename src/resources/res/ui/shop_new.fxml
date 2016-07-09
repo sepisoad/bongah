@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="hBoxFather" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sepisoad.bongah.ui.view.ShopNewController">
+   <children>
+      <HBox fx:id="hBoxRoot" spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Label fx:id="labelDocumentDate" />
+            <TextField fx:id="textFieldDate" HBox.hgrow="NEVER" />
+            <Label fx:id="labelReferrer" />
+            <TextField fx:id="textFieldReferrer" />
+            <Button fx:id="buttonFindReferrerId" mnemonicParsing="false" onAction="#onButtonFindReferrerIdAction" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <ScrollPane fx:id="scrollPaneMain" fitToWidth="true" VBox.vgrow="ALWAYS">
+         <content>
+            <VBox spacing="10.0">
+               <children>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label fx:id="labelAddress" />
+                        <TextField fx:id="textFieldAddress" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label fx:id="labelOwnerName" />
+                        <TextField fx:id="textFieldOwnerName" />
+                        <Label fx:id="labelPhoneNumbers" />
+                        <TextField fx:id="textFieldPhoneNumbers" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="buttonPictures" mnemonicParsing="false" onAction="#onButtonPicturesAction" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label fx:id="labelPrice" />
+                        <TextField fx:id="textFieldPrice" HBox.hgrow="ALWAYS" />
+                        <Separator orientation="VERTICAL" />
+                        <Label fx:id="labelSindh" />
+                        <ComboBox fx:id="comboBoxSindhType" />
+                        <Separator orientation="VERTICAL" />
+                        <Label fx:id="labelArea" />
+                        <TextField fx:id="textFieldArea" HBox.hgrow="ALWAYS" />
+                        <Separator orientation="VERTICAL" />
+                        <CheckBox fx:id="checkBoxIsSwappable" mnemonicParsing="false" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="checkBoxHasWater" mnemonicParsing="false" />
+                        <Separator orientation="VERTICAL" />
+                        <CheckBox fx:id="checkBoxHasElectricity" mnemonicParsing="false" />
+                        <Separator orientation="VERTICAL" />
+                        <CheckBox fx:id="checkBoxHasGas" mnemonicParsing="false" />
+                        <Separator orientation="VERTICAL" />
+                        <CheckBox fx:id="checkBoxHasPhone" mnemonicParsing="false" />
+                        <Label fx:id="labelFacilityPhoneNumbers" />
+                        <TextField fx:id="textFieldFacilityPhoneNumbers" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="15.0">
+                     <children>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label fx:id="labelOwnershipType" />
+                              <ComboBox fx:id="comboBoxOwnershipType" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <Separator orientation="VERTICAL" />
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label fx:id="labelRoofType" />
+                              <ComboBox fx:id="comboBoxRoofType" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="15.0" />
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="textAreaDescription" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </content></ScrollPane>
+      <HBox fx:id="hBoxBottom" spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#onButtonSaveAction" HBox.hgrow="NEVER" />
+            <Button fx:id="buttonPrintPreview" mnemonicParsing="false" onAction="#onButtonPrintPreviewAction" />
+            <Separator visible="false" HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></HBox>
+   </children>
+</VBox>

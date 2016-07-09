@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sepisoad.bongah.ui.view.LandFindController">
+   <children>
+      <HBox spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Label fx:id="labelAddress" />
+            <TextField fx:id="textFieldAddress" HBox.hgrow="ALWAYS" />
+            <Separator orientation="VERTICAL" HBox.hgrow="NEVER" />
+            <Label fx:id="labelOwner" />
+            <TextField fx:id="textFieldOwner" HBox.hgrow="SOMETIMES" />
+         </children>
+      </HBox>
+      <Separator>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Separator>
+      <HBox spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Label fx:id="labelPriceFrom" />
+            <TextField fx:id="textFieldPriceFrom" />
+            <Label fx:id="labelPriceTo" />
+            <TextField fx:id="textFieldPriceTo" />
+         </children>
+      </HBox>
+      <Separator />
+      <HBox spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Label fx:id="labelAreaFrom" />
+            <TextField fx:id="textFieldAreaFrom" />
+            <Label fx:id="labelAreaTo" />
+            <TextField fx:id="textFieldAreaTo" />
+         </children>
+      </HBox>
+      <Separator />
+      <HBox spacing="10.0">
+         <children>
+            <Label fx:id="labelSindhType" />
+            <ComboBox fx:id="comboBoxSindh" prefWidth="150.0" />
+            <Separator orientation="VERTICAL" HBox.hgrow="NEVER" />
+            <Label fx:id="labelApplicationType" />
+            <ComboBox fx:id="comboBoxApplication" prefWidth="150.0" />
+            <Separator orientation="VERTICAL" HBox.hgrow="NEVER" />
+            <Label fx:id="labelTerrainType" />
+            <ComboBox fx:id="comboBoxTerrain" prefWidth="150.0" />
+            <Separator orientation="VERTICAL" />
+            <CheckBox fx:id="checkBoxIsSwappable" mnemonicParsing="false" />
+         </children>
+      </HBox>
+      <ScrollPane fx:id="scrollPaneResult" fitToHeight="true" fitToWidth="true" VBox.vgrow="ALWAYS" />
+      <HBox spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Button fx:id="buttonFind" mnemonicParsing="false" onAction="#onButtonFindAction" />
+            <Button fx:id="buttonUpdate" mnemonicParsing="false" onAction="#onButtonUpdateAction" />
+            <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#onButtonDeleteAction" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

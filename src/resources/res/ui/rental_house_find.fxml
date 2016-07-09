@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sepisoad.bongah.ui.view.RentalHouseFindController">
+   <children>
+      <HBox spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Label fx:id="labelAddress" />
+            <TextField fx:id="textFieldAddress" HBox.hgrow="ALWAYS" />
+            <Separator orientation="VERTICAL" HBox.hgrow="NEVER" />
+            <Label fx:id="labelOwner" />
+            <TextField fx:id="textFieldOwner" HBox.hgrow="SOMETIMES" />
+         </children>
+      </HBox>
+      <HBox spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Label fx:id="labelAdvanceFrom" />
+            <TextField fx:id="textFieldAdvanceFrom" />
+            <Separator orientation="VERTICAL" />
+            <Label fx:id="labelAdvanceTo" />
+            <TextField fx:id="textFieldAdvanceTo" />
+            <Separator orientation="VERTICAL" />
+            <Label fx:id="labelRentalFrom" />
+            <TextField fx:id="textFieldRentalFrom" />
+            <Separator orientation="VERTICAL" />
+            <Label fx:id="labelRentalTo" />
+            <TextField fx:id="textFieldRentalTo" />
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Label fx:id="labelMortageFrom" />
+            <TextField fx:id="textFieldMortageFrom" />
+            <Separator orientation="VERTICAL" />
+            <Label fx:id="labelMortageTo" />
+            <TextField fx:id="textFieldMortageTo" />
+            <Separator orientation="VERTICAL" />
+            <Label fx:id="labelAreaFrom" />
+            <TextField fx:id="textFieldAreaFrom" />
+            <Separator orientation="VERTICAL" />
+            <Label fx:id="labelAreaTo" />
+            <TextField fx:id="textFieldAreaTo" />
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Label fx:id="labelRentalType" />
+            <ComboBox fx:id="comboBoxRentalType" prefWidth="150.0" />
+            <Separator orientation="VERTICAL" HBox.hgrow="NEVER" />
+            <Label fx:id="labelHouseType" />
+            <ComboBox fx:id="comboBoxHouseType" prefWidth="150.0" />
+            <Separator orientation="VERTICAL" />
+         </children>
+      </HBox>
+      <ScrollPane fx:id="scrollPaneResult" fitToHeight="true" fitToWidth="true" VBox.vgrow="ALWAYS" />
+      <HBox spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Button fx:id="buttonFind" mnemonicParsing="false" onAction="#onButtonFindAction" />
+            <Button fx:id="buttonUpdate" mnemonicParsing="false" onAction="#onButtonUpdateAction" />
+            <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#onButtonDeleteAction" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

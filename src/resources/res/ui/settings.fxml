@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="hBoxFather" prefHeight="500.0" prefWidth="500.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sepisoad.bongah.ui.view.SettingsController">
+   <children>
+      <HBox spacing="5.0">
+         <children>
+            <Label fx:id="labelLanguage" text="Label" />
+            <ComboBox fx:id="comboBoxLanguage" prefWidth="150.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox spacing="5.0">
+         <children>
+            <Label fx:id="labelWindowHeight" text="Label" />
+            <TextField fx:id="textFieldWindowHeight" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="5.0">
+         <children>
+            <Label fx:id="labelWindowWidth" text="Label" />
+            <TextField fx:id="textFieldWindowWidth" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <CheckBox fx:id="checkBoxUsePassword" mnemonicParsing="false" onAction="#onCheckBoxUsePasswordAction" text="CheckBox">
+         <VBox.margin>
+            <Insets left="15.0" />
+         </VBox.margin>
+      </CheckBox>
+      <HBox spacing="5.0">
+         <children>
+            <Label fx:id="labelOldPassword" text="Label" />
+            <TextField fx:id="textFieldOldPassword" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="5.0">
+         <children>
+            <Label fx:id="labelNewPassword" text="Label" />
+            <TextField fx:id="textFieldNewPassword" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+      <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#onButtonSaveAction">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="20.0" right="15.0" top="20.0" />
+   </padding>
+</VBox>

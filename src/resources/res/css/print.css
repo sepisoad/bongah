@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Samim';
+    src: url('font/Samim.ttf');
+}
+
+@font-face {
+    font-family: 'Samim Bold';
+    src: url('font/Samim-Bold.ttf');
+}
+
+Text {
+    -fx-font: 10px "Samim";
+}
+
+Button {
+    -fx-font-family: 'Samim Bold';
+}
+
+VBox {
+  -fx-background-color: #ffffff;
+}

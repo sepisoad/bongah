@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Samim';
+    src: url('font/Samim.ttf');
+}
+
+@font-face {
+    font-family: 'Samim Bold';
+    src: url('font/Samim-Bold.ttf');
+}
+
+.text {
+    -fx-font-family: 'Samim Bold';
+}
+
+TextField {
+    -fx-font-family: 'Samim';
+}
+
+TextArea {
+    -fx-font-family: 'Samim';
+}
+
+.table-view .column-header .label {
+    -fx-font-family: 'Samim';
+}
+
+#idAppName{
+  -fx-font: 50px "Samim Bold";
+}
